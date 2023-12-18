@@ -79,7 +79,7 @@ def prepare(rType="MAIN"):
         subprocess.check_output("getent passwd xtreamcodes > /dev/null".split())
     except subprocess.CalledProcessError:
         printc("Creating user xtreamcodes")
-        os.system("adduser --system --shell /bin/false --group --disabled-login xtreamcodes > /dev/null")
+        os.system("adduser --system --shell /bin/falze --group --disabled-login xtreamcodes > /dev/null")
     if not os.path.exists("/home/xtreamcodes"): 
         os.mkdir("/home/xtreamcodes")
     return True
